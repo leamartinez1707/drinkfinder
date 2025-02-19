@@ -3,6 +3,8 @@
 ## Description
 This project is an application to manage drink recipes. It allows users to search for recipes by name or ingredients.
 
+Connected to https://www.thecocktaildb.com/api.php for drinks information.
+
 ## Features
 - Search for drink recipes
 - Add drinks to favorites
