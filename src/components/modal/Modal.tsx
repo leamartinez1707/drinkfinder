@@ -63,11 +63,11 @@ export default function Modal() {
                                         className='w-full h-96 object-fill'
                                         src={recipe.strDrinkThumb} alt={`Imágen de ${recipe.strDrink}`} />
                                     <DialogTitle as="h3" className="text-gray-900 text-2xl font-extrabold my-5">
-                                        Instrucciones
+                                        Instructions
                                     </DialogTitle>
                                     <p>{recipe.strInstructions}</p>
                                     <DialogTitle as="h3" className="text-gray-900 text-2xl font-extrabold my-5">
-                                        Ingredientes
+                                        Ingredients
                                     </DialogTitle>
                                     {renderIngredients()}
 
@@ -75,11 +75,11 @@ export default function Modal() {
                                         <button
                                             onClick={() => handleFavorite(recipe)}
                                             className='w-full rounded bg-amber-500 hover:bg-amber-600 p-3 font-semibold uppercase text-white shadow'
-                                        >{isFavorite ? 'Eliminar de favoritos' : 'Agregar a favoritos'}</button>
+                                        >{isFavorite ? 'Remove from favorites' : 'Add to favorites'}</button>
                                         <button
                                             onClick={closeModal}
                                             className='w-full rounded bg-gray-800  hover:bg-gray-900 p-3 font-semibold uppercase text-white shadow'
-                                        >Cerrar</button>
+                                        >Close</button>
                                     </div>
                                 </DialogPanel>
                             </TransitionChild>

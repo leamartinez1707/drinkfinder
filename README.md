@@ -1,50 +1,51 @@
-# React + TypeScript + Vite
+# DrinkFinder Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+This project is an application to manage drink recipes. It allows users to search for recipes by name or ingredients.
 
-Currently, two official plugins are available:
+## Features
+- Search for drink recipes
+- Add drinks to favorites
+- Delete drinks from favorites
+- Save favorites to LocalStorage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Requirements
+- Node.js
+- npm
 
-## Expanding the ESLint configuration
+## Installation
+1. Clone the repository:
+  ```bash
+  git clone https://github.com/leamartinez1707/drinkfinder.git
+  ```
+2. Navigate to the project directory:
+  ```bash
+  cd drinkfinder
+  ```
+3. Install the dependencies:
+  ```bash
+  npm install
+  ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Usage
+1. Start and preview the application:
+  ```bash
+  npm run preview
+  ```
+1. Open your browser and navigate to `http://localhost:4173` to use the application.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Contribution
+1. Fork the repository.
+2. Create a new branch:
+  ```bash
+  git checkout -b feature-new-functionality
+  ```
+3. Make your changes and commit them:
+  ```bash
+  git commit -m "Add new functionality"
+  ```
+4. Push your changes:
+  ```bash
+  git push origin feature-new-functionality
+  ```
+5. Open a Pull Request.
