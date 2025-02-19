@@ -27,10 +27,10 @@ This project is an application to manage drink recipes. It allows users to searc
   npm install
   ```
 4. Build the project:
-   ```bash
-   npm run build
-   ```
-   
+  ```bash
+  npm run build
+  ```
+
 ## Usage
 1. Start and preview the application:
   ```bash
